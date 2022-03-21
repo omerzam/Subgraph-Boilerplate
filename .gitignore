@@ -60,8 +60,33 @@ typings/
 # next.js build output
 .next
 
+# MacOS related files
+*.DS_Store
+.AppleDouble
+.LSOverride
+._*
+UserInterfaceState.xcuserstate
+
+# Windows related files
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# IDE - Sublime
+*.sublime-project
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/*.code-snippets
+!.vscode/tasks.json
+!.vscode/launch.json
+
+
+# IDE - IntelliJ
+.idea
+
 generated/
-.vscode/
 build/
 data/
 bin/
