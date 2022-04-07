@@ -2,11 +2,11 @@ specVersion: 0.0.2
 schema:
   file: ./schema.graphql
 dataSources:
-  - kind: ethereum
+  - kind: ethereum/contract
     name: ERC20
-    network: mainnet
+    network: {{network}}
     source:
-      address: "{{WRBTCToken.address}}"
+      address: '{{WRBTCToken.address}}'
       abi: ERC20
       startBlock: {{WRBTCToken.startBlock}}
     mapping:
@@ -20,8 +20,9 @@ dataSources:
         - name: ERC20
           file: ./abis/ERC20.json
       eventHandlers:
+        
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/mapping.ts
+      file: ./src/ERC20.ts
