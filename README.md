@@ -23,7 +23,7 @@
   
 * npm run deploy-local
   
-* go to http://localhost:8000/subgraphs/name/DistributedCollective/sovryn-subgraph/graphql
+* go to http://localhost:8000/subgraphs/name/omerzam/Subgraph-Boilerplate/graphql
 
 
 ## Scaffolding:
